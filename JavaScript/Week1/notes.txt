@@ -1,6 +1,6 @@
 Lecture 0: April 30th
 
-ASCII: American Standard Code for Information Interchange..
+ASCII: American Standard Code for Information Interchange
 
 65 - A
 66 - B
