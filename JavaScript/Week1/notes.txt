@@ -1,0 +1,20 @@
+Lecture 0: April 30th
+
+ASCII: American Standard Code for Information Interchange..
+
+65 - A
+66 - B
+97 - a
+98 - b
+
+
+ Relative Path and absolute path????
+
+Three ways to run JavaScript!
+    1. Using Terminal - we go into the folder where file exists and then run it by using command "node filename.js".
+
+    2. Using browser - attach the script by using <script> element and see the output in the console of the browser..
+
+    3. REPL: Read Evaluate Process Loop:
+        i) Browser REPL
+        ii) Terminal REPL
