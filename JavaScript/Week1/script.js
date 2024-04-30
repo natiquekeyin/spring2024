@@ -1,1 +1,1 @@
-console.log("Welcome to a brand new semester!!");
+console.log("Welcome to a brand new semester!");
