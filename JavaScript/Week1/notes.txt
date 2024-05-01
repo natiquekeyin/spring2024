@@ -68,7 +68,13 @@ JavaScript Syntax:
     {
 
     }else{
-        
+
     }
 
-    
+7. Functions in JS:
+    Primary building block of JS programs. Different from Python!
+
+8. Variables in JS:
+    var
+    let 
+    const
