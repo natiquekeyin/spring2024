@@ -18,3 +18,57 @@ Three ways to run JavaScript!
     3. REPL: Read Evaluate Process Loop:
         i) Browser REPL
         ii) Terminal REPL
+
+Introduction to JavaScript!
+    Interpreted JIT(Just in compilation), light-weight meant to be embedded in host environments for example web browsers
+
+    JavaScript looks similar to C, C++. C language is generally reffered as mother or modern programming languages..Though it seems similar to C, but it is quite different from C in philosophy..
+
+    JavaScript (mid 90s) at that time JS was actually ONLY for client side scripts...
+                to the Server Side scripts
+                to the console based applications...
+                NODE JS :)
+
+
+            Client  ------> Server
+            
+            Static Website:
+            When clients asks for a website and server sends back the copy of that website (and do not do any processing of its own...). Clients receives and executes it( scripts are client side scripts).
+            shiwng same contents to every user!
+
+
+            Dynamic Website:
+            When clients asks fora website, the server runs some script that may or may not interact with a database or with some sensors etc and produces a result after running the script(server side script) and sends back the result[client side scripts] to the client.
+            showing different contents to every user!
+
+
+JavaScript Syntax:
+
+1. JavaScript is case sensitive: x, X treated different!
+    customerName, CustomerName
+
+2. camelCase naming in JavaScript! PascalCase, snake_case, kebab-case 
+
+3. Semi colons are optional are optional. Semi colon is called "Statement Terminator" ;
+    Though it is optional in JS, but it is highly recommended
+4. Comments in JS:
+    // this is called single Comments
+    /* 
+    this multiline ocmment
+
+    */
+5. Statements in JS: A prgoram is series of statments in JS. A statement is a single-line of instructuion made up of objects,expressions,variables and events etc etc..
+
+6. Block Statement: 
+    {
+
+    }
+
+    if(x>0)
+    {
+
+    }else{
+        
+    }
+
+    
