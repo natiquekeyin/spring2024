@@ -1,0 +1,72 @@
+Front End:
+
+1.HTML
+2.CSS
+3.JavaScript
+
+;, let, arrays, { }
+
+1. HTML:
+
+HyperText Markup Language:
+HyperText  - Linked text - hotspot - A text when clicked opens something else..
+Markup - Rules for particular areas
+<b>Something </b> <strong> Side note </strong> <i> some italic Text</i> <em> Emphasized text </em>
+Language - Compiled languages , Interpreter based languages (which will execute teh part of code that it understands)
+
+ a. Tags - combination of "<" some text and ">"
+ b. Element - combination of Starting tag, content and Ending Tag...
+
+ Anything that starts with <!...> .. is not an element!
+ <!DOCTYPE html> Declaration....
+ 
+ <meta /> - Empty elements - self closing elements....
+
+ <hr> </hr> WRONG
+ <hr />
+ <br />
+ <img/>
+
+
+ ALWAYS VALIDATE YOUR ASSIGNMENT BEFORE SUBMISSION - NO RED COLORED ELEMENTS OR ATTRIBUTES...IN YOUR ASSIGNEMNT
+
+SYNTAX of HTML page:
+
+<html></html>: the root element of our document - everything goes inside html element
+<head> <title> </title></head>: interpretes FIRST whereever you place..varios meta information..only <title> inside head is directly visible on webpage .. nothing else is visible on the web page...
+<body></body> Whatever you want to show to users should be inside body ...
+
+
+SEMANTICAL HTML: Accessibiltiy purpose - screen readers will understand with semantic element s what is inside it. All these elements are meant to be inside <body> </body> element??
+
+<nav>...</nav>  Navigation - All the links of webpage should  be put inside <nav> element..
+<footer>...</footer> - footer information...
+<header>..</header> introductory material at the top of a document..
+<main>...</main> 
+
+NEVER CONFUSE SEMANTIC ELEMENTS WITH SYNTACTIC ELEMENTS...
+
+<h1></h1>....<h6></h6> YES they are semantic elements Regardless of their sizes, h1 will have always the highest importance and so on...
+
+
+TEXT CONTENT:
+
+<div> </div> a generic container we use to attach CSS styles to particular area of content...
+<ol>..</ol>
+<ul>..</ul>
+<li>..</li>
+<p> </p>
+<blockquote> ...</blockquote>
+
+SHORTCUT - li*5 will make 5 li elements for us!
+
+INLINE TEXT:
+
+<a>..</a>
+<code>...</code>
+<em>..</em>
+<span>...</span>
+
+1.INLINE LEVEL ELEMENTS
+2.BLOCK LEVEL ELEMENTS
+
