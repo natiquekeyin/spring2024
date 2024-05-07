@@ -57,6 +57,10 @@ JavaScript Syntax:
     this multiline ocmment
 
     */
+
+    /*   Name:   Assignment:  Date: May 7,2024 */
+    <!-- comments  --> HTML Comment
+
 5. Statements in JS: A prgoram is series of statments in JS. A statement is a single-line of instructuion made up of objects,expressions,variables and events etc etc..
 
 6. Block Statement: 
