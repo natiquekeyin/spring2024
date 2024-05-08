@@ -62,5 +62,78 @@ for(initialization; condition; increment/decrement ){
     
 }
 
+var i =10;
+i++; //anycase when this statement is executed the i becomes 11
+console.log(i); //11
 
 
+
+Functions in JavaScript:
+    "A function is a subprogram, or a smaller portion of code that can be called(i.e;invoked) by another part of your program, another function, or by the environment in response to some user or device action(e.g; clicking a button, a newtwork request etc.)
+
+    Syntax of Functions:
+        Functions can take values(i.e., arguments) and may return a value.
+            add NOT A FUNCTION...
+            add( )
+
+            juicer(apples)
+             c add(a,b)
+     Types of Fucntions in JavaScript:
+        i)User-defined Functions
+        ii) Pre-defined functions.
+
+        I) User-defined Functions: functions defined by us (as users)
+            i)Function Declarations
+            ii)Function Expressions
+            iii) Arrow Functions 
+
+            Function Declarations:
+
+            function noop(){
+
+            }
+
+            function square(n){
+                return n*n;
+            }
+
+            function add(a,b){
+                return a+b;
+            }
+
+
+            Function expressions:[ONLY IN JS]
+
+            let noop = function(){ } //anonymous
+
+            let square=function(n){return n*n}
+
+            let add=function(a,b){ return a+b }
+
+            noop();
+            square(5);
+            add(3,5);
+
+            Arrows Functions:
+
+            let noop = ()=>{ };
+            let square = (n)=>{
+                return n*n;
+            }
+            let add= (a,b)=>{
+                return a+b;
+            }
+
+
+            What is an expression???? An expresion is something that evaluates to a value...
+
+            x=5+3; NOT, it is an equation...
+            5+3 Expressions
+            x Expression
+
+    Parameters and arguments:
+
+    arguments : predefined...
+
+
+    Rest operator (...): Self study for you!
