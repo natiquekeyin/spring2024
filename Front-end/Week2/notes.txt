@@ -1,3 +1,39 @@
 Week2: May 8,2024:
 
 Try to immitate Wikipedia!
+
+Web browsers are actually called "User agents"
+
+Attributes: that give extra functionality to the tags:
+
+<a href="https://www.google.com" id="ggl">Google </a>
+<img src="abc.jpg"/>
+
+ALMOST ALWAYS NAME YOUR FIRST PAGE AS "index.html"
+
+CSS:Cascading Style Sheet
+    How do my page loook good...
+    Web browsers do have their style sheets too...
+
+Syntax of CSS:
+    Rules:
+        i)A selector - the element on which we want to apply style
+        ii) Declaration - the rule/style in a key value pair that has to applied
+    Where to put CSS?
+     i) Inline CSS - Not recommended - when we define style within the element
+     <h1 style="color:red">Another heading</h1>
+     ii) Internal CSS : WHen we define style in the <head> section of the document...
+     iii) External CSS: Define a separate file with ".css" extenstion and link it to any page you want...
+     iv) The browser itself - Its own style sheet..
+    
+Selectors:
+1. Tag/type selectors: When we use tag name to style somethign
+2. Class Selectors: when we define a  class of styles by using "." .demo{ } ... <h1 class = "demo">this one applied</h1>
+3. ID selectors: when we define style for a unique element represented by an id. The style is defined by using #a1 for example...."#"
+
+4. Contextual Selectors: div h1{ } // only those h1 will get this style which are under the div element not others...
+5. Grouping selectors:
+We can group multiple selectors together... h1,h2,h3{ }
+
+Next week!
+Box model, Flexbox, CSS Grid!
