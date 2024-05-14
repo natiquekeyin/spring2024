@@ -1,0 +1,29 @@
+Rest operator:
+... 
+
+Dealing with Optional and Missing parameters:
+  We use the missing value as truthy or falsy and take decision on them..
+
+|| OR operator: Either side should be true to get a true output
+&& AND operator: Both sides should be true to get a true output
+
+
+1 AND 1  make 1
+1 AND 0 make 0
+0 AND 0 make 0
+
+1 OR 0 make 1
+0 OR 1 make 1
+0 OR 0 make 0
+
+Built-in/Global Functions:
+
+parseInt()
+parseFloat()
+isNaN()
+
+
+Object Oriented JavaScript:
+    String is one object data type in JavaScript:
+
+
