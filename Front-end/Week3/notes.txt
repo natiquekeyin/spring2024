@@ -13,5 +13,17 @@ Why 100% vw for some elements?
 
 CSS Box Model:
 
-Flex Box Model
+Flex Box Model:
 
+Media queries:
+
+Forms in HTML: They are used to take input from user
+    <form> </form>
+    Attributes:
+    action = What you want to do when user submits the form
+    method = get; post; 
+
+        get method sends data as part of URL
+        post method sends data as part of body of the document
+
+Boostrap! ??

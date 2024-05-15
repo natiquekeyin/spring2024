@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-lg">
+        <h1>Forms</h1>
+
+        <form action="/data" method="get" id="registration">
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            autofocus
+            autocomplete="given-name"
+            placeholder="Your first name here"
+            maxlength="50"
+            tabindex="1"
+            class="form-control m-2 p-3"
+          />
+          <br />
+          <input
+            type="radio"
+            id="html"
+            name="fav_language"
+            value="HTML"
+            class="form-control"
+          />
+          <label for="html">HTML</label><br />
+          <input
+            type="radio"
+            id="css"
+            name="fav_language"
+            value="CSS"
+            class="form-control"
+          />
+          <label for="css">CSS</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="JavaScript"
+            class="form-control"
+          />
+
+          <label for="javascript">JavaScript</label>
+          <br />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="Your email here"
+            tabindex="2"
+            class="form-control"
+          />
+          <br />
+          <label for="date">Date</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            tabindex="3"
+            class="form-control"
+          />
+
+          <br />
+          <label for="position">Position</label>
+          <input
+            type="text"
+            id="position"
+            name="position"
+            tabindex="4"
+            list="positions"
+            class="form-control"
+          />
+          <datalist id="positions">
+            <option value="IT Technician"></option>
+            <option value="HR Manager"></option>
+            <option value="Account Manager"></option>
+            <option value="Clerk"></option>
+          </datalist>
+          <br />
+          <label for="comments">Comments</label>
+          <textarea
+            name="comments"
+            id="comments"
+            rows="10"
+            cols="10"
+            placeholder="Your statement or comments here"
+            tabindex="5"
+            class="form-control"
+          ></textarea>
+
+          <br />
+          <label for="upload">Upload Resume</label>
+
+          <input
+            type="file"
+            id="upload"
+            name="upload"
+            tabindex="6"
+            accept=".doc,.docx,application/pdf"
+            class="form-control"
+          />
+          <br />
+          <input
+            type="password"
+            id="password"
+            name="passwor"
+            class="form-control"
+          />
+          <input type="submit" value="Apply" class="form-control" />
+          <input type="reset" value="Clear" class="form-control" />
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
