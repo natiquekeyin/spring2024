@@ -24,6 +24,34 @@ isNaN()
 
 
 Object Oriented JavaScript:
+Strings:
     String is one object data type in JavaScript:
 
 
+Arrays:
+
+let arr=[1,3,4];
+let arr2=new Array(5,6,7);
+
+Unlike most other[C family , exception: C#[allowing mix type]] languages, JS array can contain any dataype including mix types:
+
+let list=[0,"1","name",true];
+Array Properties and Methods:
+
+ arr.length - length of the array
+ arr.push() to insert one element at the end of array
+ arr.pop() to delete one value from the end of an array...
+
+ arr.unshift() inserts at the beginning
+ arr.shift() removes from the beginning
+
+ arr.join("x"); returns a string created by joining(concatenating) all elements in the array with the given delimiter - split() is the opposite of join
+
+ Methods for iterating accross the elemtns in an array:
+  for loop:
+  forEach Method:
+  map function: creates and returs a new array by applying the given function on each value of the collection....
+
+
+  Difference forEach and map function?????
+  
