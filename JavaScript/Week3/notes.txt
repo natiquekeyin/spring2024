@@ -54,4 +54,5 @@ Array Properties and Methods:
 
 
   Difference forEach and map function?????
+  Difference map and filter?? map maps with each value and returns a boolean(if there is a condition in the function WHILEAS filter will filter out all the values that do not match the give condition..)
   

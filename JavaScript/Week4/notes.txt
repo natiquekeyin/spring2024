@@ -1,0 +1,46 @@
+Regular Expressions:???
+    A regular expression(aka regex) is a special string that describes a pattern to be used for matching or searching within other strings.
+
+    colour
+
+    color 
+
+    Regular Expression:  colou?r - an RE that accepts both colour and color
+
+
+
+    In JavaScript: The ways to write an RE in JS.
+
+    let re = /colou?r/ ;
+    let re2 = new RegExp("colou?r");
+
+
+    let re = /colou?r/gi; //ignore case
+    let re2 = new RegExp("colou?r","gi")
+
+
+    Special Characters in REs:
+  . means any character...
+  [] represents the set of allowable Characters
+  [^ ] a cap inside means the OPPOSITE of the set...
+  \d represents any digit ...
+ a-zA-Z0-9_  are collectively called \w in REs:
+ \D means anything BUT a digit - the opposite of \D
+ \w is a-zA-Z0-9_  AND \W is the opposite of it - anything but a word 
+ \s means space
+ *  0 or more occurances
+ + means 1 or more occurances
+
+{3} means exact number - 3 letters should
+{2,4} between 2 and 4
+{3,} 3 and above ...
+
+
+Regular Expression for Phone number:
+
+\(?\d{3}\)?[\s-]*\d{3}[\s-]*\d{4}\
+
+.test() takes a string and tests it with the given regular expression
+.match() takes a regular expression and matches with the given string..
+
+catpure groups: when we put rounded brackets around different areas in RE they becom the capture groups in matching...
