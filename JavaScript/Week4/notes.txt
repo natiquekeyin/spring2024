@@ -43,4 +43,35 @@ Regular Expression for Phone number:
 .test() takes a string and tests it with the given regular expression
 .match() takes a regular expression and matches with the given string..
 
-catpure groups: when we put rounded brackets around different areas in RE they becom the capture groups in matching...
+Capture groups: when we put rounded brackets around different areas in RE they becom the capture groups in matching...
+
+
+"This is a             string that has       spaces".replace(/\s+/g," ");
+'This is a string that has spaces'
+"1,      2, 3,      4, 5'.split(",");
+VM1068:1 Uncaught SyntaxError: Invalid or unexpected token
+"1,      2, 3,      4, 5".split(",");
+(5) ['1', '      2', ' 3', '      4', ' 5']
+"1,      2, 3,      4, 5".split(/,\s*/g);
+(5) ['1', '2', '3', '4', '5']
+"a,        b       ,         c, d".split(/,/g);
+(4) ['a', '        b       ', '         c', ' d']
+"a,        b       ,         c, d".split(/,\s*/g);
+(4) ['a', 'b       ', 'c', 'd']
+"a,        b       ,         c, d".split(/\s*,\s*/g);
+(4) ['a', 'b', 'c', 'd']
+
+
+//   let data = [];
+  //   by using for loop
+  //   for (let i = 0; i < rows.length; i++) {
+  //     let row = rows[i];
+  //     let fields = rowToFields(row);
+  //     // add this set of fields to our data
+  //     data.push(fields);
+  //   }
+  //   by using for of loop
+  //   for (let row of rows) {
+  //     let fields = rowToFields(row);
+  //     data.push(fields);
+  //   }
