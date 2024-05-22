@@ -1,0 +1,34 @@
+From HTML to the DOM:
+    DOM: Document Object Model - API (Application Programming Interface?)[that allows communication between two application]
+    
+    DOM allows communication between HTML,CSS and JavaScript!
+
+    DOM Tree:The tree that is created in the browser memory while we load a web page.
+
+    HTML Nodes: All html elements are called HTML nodes.
+    Text Nodes: All text values are called text nodes...
+
+    Programming the DOM: Set of Objects, functions and properties allowing scrips to interact with and modify HTML. 
+
+    Tasks that DOM does:
+        1. Finding and getting references to elements in the page
+         To get refernce to the elemtn that you want to change/alter/delete or create a new one.
+          a) document.getElementById(id)
+          b) document.querySelector(selector)
+          c) docuemnt.querySelectorAll(selector)
+          selector: i) "tag name" 
+                    ii) Id selectors
+                    iii) class selectors
+
+        2. Creating elements and Modifying the DOM with JavaScript:
+            document.createElement(name): creates a new element of type specified by the name.
+
+            document.createTextNode(text): creates a new text node(the text withing an elements vs the element itself)
+
+
+        3. Inspecting and modifying a DOM element with JavaScript
+
+
+        4. Events:
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>This is a Document</title>
+  </head>
+  <body>
+    <h1 class="demo">Welcome</h1>
+    <p id="p1">This is a paragraph with <a href="index.html">link</a>in it.</p>
+    <ul>
+      <li>first item</li>
+      <li id="l2">second item</li>
+      <li class="demo">third item</li>
+    </ul>
+    <div id="s2">
+      <h1>This is a div</h1>
+    </div>
+
+    <script>
+      let x = document.getElementById("p1");
+      console.log("The node is ", x);
+
+      let y = document.querySelector("h1");
+      console.log("The heading is ", y);
+
+      let z = document.querySelector("#l2");
+      console.log("The id l2 is ", z);
+
+      let values = document.querySelectorAll(".demo");
+      values.forEach(function (x) {
+        console.log(x);
+      });
+
+      let newD = document.createElement("h1");
+      let text = document.createTextNode("New Heading");
+      newD.appendChild(text);
+
+      document.querySelector("#s2").appendChild(newD);
+    </script>
+  </body>
+</html>
