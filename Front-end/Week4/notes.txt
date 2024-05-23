@@ -17,18 +17,67 @@ From HTML to the DOM:
           b) document.querySelector(selector)
           c) docuemnt.querySelectorAll(selector)
           selector: i) "tag name" 
-                    ii) Id selectors
-                    iii) class selectors
+                    ii) Id selectors (#)
+                    iii) class selectors(.)
 
         2. Creating elements and Modifying the DOM with JavaScript:
             document.createElement(name): creates a new element of type specified by the name.
 
             document.createTextNode(text): creates a new text node(the text withing an elements vs the element itself)
 
+            appendChild();
+
 
         3. Inspecting and modifying a DOM element with JavaScript
 
+            Properties:
+            element.id - 
+            element.innerHTML - gets or sets the markup contained within the element.innerText - gets or sets the text withing the element
+            element.parentNode - gets a reference to the parent node of this element.nextSibling - gets a reference the sibling element of this element, if any..
+            element.className - gets or sets the value of class attribute
 
-        4. Events:
+            Methods:
+            element.querySelector() - same as document.querySelector() but begins from element vs document.
+            element.scrollIntoView() - scrolls the page until the element is in view. 
+
+            element.hasAttribute(name) = checks if the attribute name exists..
+            element.removeAttribute(name) - removews the attribute name from this element.
 
 
+        4. Events:DOM heavily replies on a concept know as "event-driven programming"
+            The examples of events might: user actions(clicking a button, move the mouse over , pressing akey, changeing tab) or browser/code intitiated actions(timers,messages from background, reporst from sensors)
+
+        the functions that run on any triggered event are called "event handlers"
+
+        We register a DOM event in one of the two ways:
+         1. element.onevent = function()={ }
+         2. element.addEventListener("event", function(){... }) & element.removeEventListener('event', function(){ ....})
+
+
+        Common Events:
+         load - fired when a resource has finished loading...(img)
+         click - when user single clicks on an element
+         dblclick - when use double clicks on an element
+         keypress - when a key is pressed
+         mouseover - whern the user moves the mouse over the top of the elemtn.
+
+
+
+         let body = document.body;
+let cat = document.querySelector("#cat");
+
+body.addEventListener("click", function (e) {
+  console.log("body clicked");
+});
+
+cat.addEventListener("click", function (evt) {
+  document.querySelector("#s1").innerHTML = "You Clicked on Cat";
+  document.querySelector("#c2").innerText = "My Cat";
+
+  cat.src = "../images/cat2.jpg";
+  evt.stopPropagation();
+});
+
+document.querySelector("#c2").addEventListener("click", function (e) {
+  document.querySelector("#s1").innerText = "You clicked the cat text";
+});
