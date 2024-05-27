@@ -1,0 +1,11 @@
+Events:
+
+body.addEventListener("click", function(e){ });
+
+e here is very important. Through this we can control a lot of window activities. 
+
+
+Timers:
+
+setTimeout(function, delayMS): schedule a task (function) to be run in future (delayMS from now). 
+setInterval(function, delayMS); schedule a task (function) to be run in future every delayMS from now.. will be called repeatedly...
