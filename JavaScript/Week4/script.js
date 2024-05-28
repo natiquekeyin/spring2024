@@ -18,13 +18,38 @@ function splitIntoRows(s) {
   return s.split(/\r?\n/g);
 }
 
+function removeExtraWhiteSpace(s) {
+  return s.replace(/\s+/g, " ");
+}
+
+function extractAreaCode(phoneNumber) {
+  let matches = phoneNumber.match(/(\(?\d{3}\)?)[\s-]*(\d{3})[\s-]*(\d{4})/);
+  if (matches) {
+    return matches[1];
+  }
+  return phoneNumber;
+}
+
+function normalizeHeight(height) {
+  if (height.endsWith("inches")) {
+    return height;
+  }
+
+  let cm = parseFloat(height); //it will extract only number in cm
+  let inches = cm * 0.39; //convert the cm value into inches..
+
+  return `${inches} inches`;
+}
 function rowToFields(row) {
   let fields = row.split(/\s*,\s*/g);
 
-  fields[1] = fields[1].replace(/\s+/g, " ");
-  // use RegExp and extract the area code...
-
-  return fields;
+  // fields[1] = fields[1].replace(/\s+/g, " "); //let convert this into function...
+  fields[1] = removeExtraWhiteSpace(fields[1]);
+  // Extract Area code from 5555551234 or 555-123-1234
+  fields[2] = extractAreaCode(fields[2]);
+  // normalize height
+  fields[3] = normalizeHeight(fields[3]);
+  return fields.join(",");
 }
 
 function processCSV(csv) {
@@ -37,9 +62,12 @@ function processCSV(csv) {
 
   let data = rows.map((row) => rowToFields(row));
 
-  console.log(data);
-  //   return rows;
+  // console.log(data.join("\n"));
+  // console.log(data);
+  return data.join("*");
 }
 
 var processed = processCSV(csvData);
-console.log(processed);
+console.log("Unprocessed:", csvData);
+console.log("---------------");
+console.log("Processed", processed);
