@@ -1,0 +1,32 @@
+Prototypal Inheritance in JavaScript:
+
+let a = 10;
+let b = [1,3,4]; //array data type
+0: 1
+1: 3
+2: 4
+
+let b = [1, 3,4];
+b[0] = 1;
+
+let c ={ }; //object data type..Empty object literal
+
+let obj = {course:"JavaScript"};
+
+console.log(obj["course"]); // JavaScript
+
+let obj2 = {course:"JavaScript", college:"Keyin", semester:"two"}
+
+let users=[{a:1},{b:2},{c:3}]
+
+users[1].b;
+
+
+let user1 = new User("Alan", "Smith", 20);
+console.log(user1);
+let user2 = new User("Bob", "Smith", 22);
+console.log(user2);
+
+Prototypal inheritance:
+
+Those values that may or may not be required shold not be placed in the constructor function rather they should be placed in the prototype...
