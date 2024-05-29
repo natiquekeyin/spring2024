@@ -10,9 +10,9 @@
 
 */
 
-var csvData = `0134134,John Smith,555-567-2312, 62 inches
+var csvData = `0134134,John                         Smith,555-567-2312, 62 inches
 0134135        ,       June         Lee       , 5554121234,           149 cm
-0134136,          Kim Thomas        , 5324126347,  138cm`;
+0134136                               ,          Kim Thomas        , 5324126347,  138cm`;
 
 function splitIntoRows(s) {
   return s.split(/\r?\n/g);
@@ -64,7 +64,7 @@ function processCSV(csv) {
 
   // console.log(data.join("\n"));
   // console.log(data);
-  return data.join("*");
+  return data.join("\n");
 }
 
 var processed = processCSV(csvData);
