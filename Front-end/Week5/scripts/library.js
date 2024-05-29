@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function () {
       showAlert("No field should be empty", "error");
     } else {
       let row = document.createElement("tr");
-      row.innerHTML = `<td>${t}</td><td>${a}</td><td>${i}</td>`;
+      row.innerHTML = `<td>${t}</td><td>${a}</td><td>${i}</td><td><button>X</button></td>`;
 
       document.querySelector("#book-list").appendChild(row);
       clearFields();
