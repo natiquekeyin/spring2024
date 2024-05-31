@@ -1,0 +1,39 @@
+Regular Expressions:
+
+    provides a way to i)search, ii)update, iii) delete, iv)validate etc within a large of number of string by defining a specific pattern.
+
+    Regular expression for recognizing multiple spaces in a big string.So that I can later replace those multiple spaces with ONLY one space.
+
+    "hello         this is        a string             that contains       a lot of spaces".
+
+    One or more - +
+    Zero or more - *
+    space - \s
+
+
+
+let sentence =
+  "hello   this is        a string that contains       a lot of tha hha spachaes la";
+
+let re1 = /\s+/g;
+// write re that finds "hat" in above string and replace it with space
+let re2 = /t?hat?/g;
+let re3 = /o\s?/g;
+let re4 = /l(\w{2})?/g;
+console.log(sentence.replace(re4, "X"));
+
+
+
+----------------------------------
+
+
+let str =
+  "Alan Smith is a very good person. Alanu family reside in Toronto. Alans brothers are so and so.Alanxyx is a sportsman";
+
+let re1 = /alan(\w{1})?/gi;
+
+console.log(str.replace(re1, "Bob"));
+
+
+let letters = ["a","b", "c"];
+letters.forEach(function(value){console.log(value); });
