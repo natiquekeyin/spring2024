@@ -1,3 +1,4 @@
+// Week5 lectures.
 // let myArr = [10, 23, 1, 2];
 
 // console.log(myArr[0]);
