@@ -22,7 +22,7 @@
  * snake(' ABC ') --> returns 'abc'
  * snake('ABC') --> returns 'abc'
  * snake('A BC') --> returns 'a_bc'
- * snake(' A bC  ') --> returns 'a-bc'
+ * snake(' A bC  ') --> returns 'a_bc'
  * snake('A   BC') --> returns 'a_bc'
  * snake('A.BC') --> returns 'a_bc'
  * snake(' A..  B   C ') --> returns 'a_b_c'
