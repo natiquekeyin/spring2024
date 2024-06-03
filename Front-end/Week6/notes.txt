@@ -1,0 +1,31 @@
+Object Oriented Programming in JavaScript:
+
+    There is a constructor function that can be used to construct objects.(from our programming in JavaScript) - Prototypal inheritance: legacy ways of doing object oriented programming in JavaScript.
+
+    Advanced/ES5 ES6(Real Object Oriented way): Instead of using constructor function, we use something that is called a "class" and then we create object of that class.
+
+    Syntax:
+
+    class Student{
+
+
+    }
+    class defines a blueprint that contains data and functions inside it.
+
+
+    To use this class, we NEED to create "object". [class itself is not usable, unless we create object of it that contains all the features of the class inside it]
+
+
+    In JavaScript classes, the constructor function is literally called "constructor"
+
+    In ALL other Object Oriented Programming languages, constructor function has the same name as "class"..
+
+    constructor function in class is automatically/implicitly called when the object of this class is created.
+    
+    Other than constructor all functions need to be explicitly called. 
+
+    In every class, we have setter and getter functiosn
+    
+    setters to set something for the class
+    getters to get something fromn the class
+
