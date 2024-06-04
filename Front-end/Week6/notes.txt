@@ -8,12 +8,32 @@ Object Oriented Programming in JavaScript:
 
     class Student{
 
+       //member variables
+        firstName;
+        lastName;
 
+        //member functions/methods
+
+        printName(){
+            console.log(this.firstName);
+
+        }
+
+        setName(f,l){
+            this.firstName = f;
+            this.lastName = l;
+                   }
+        getLastName(){
+            return this.lastName;
+        }
     }
+
+
+
     class defines a blueprint that contains data and functions inside it.
 
 
-    To use this class, we NEED to create "object". [class itself is not usable, unless we create object of it that contains all the features of the class inside it]
+    To use this class, we NEED to create "object". [class itself is not usable, unless we create object of it that contains all the features of the class inside it - PROVE IT SOME OTHER WAY]
 
 
     In JavaScript classes, the constructor function is literally called "constructor"
