@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", function () {
     let author = document.querySelector("#author").value;
     let isbn = document.querySelector("#isbn").value;
 
-    let book = new Book(title, author, isbn);
+    let book = new Book(title, author, isbn); //create the object
 
     book.addBookToList(book);
     book.clearFields();

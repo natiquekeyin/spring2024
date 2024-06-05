@@ -49,3 +49,12 @@ Object Oriented Programming in JavaScript:
     setters to set something for the class
     getters to get something fromn the class
 
+    Every class can have a special fucntion called "constructor". The constructor function actually is called "implicitly" when the object is created.
+
+undefined * undefined = NaN
+x * undefined = NaN
+
+
+static methods and fields:
+
+Keyword "static" makes the member function or variable as "class level component" NOT "object level component".
