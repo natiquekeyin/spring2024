@@ -69,28 +69,111 @@
 // p1.setValues("Xyx", 20);
 // console.log(p1);
 
-class Rectangle {
-  static x = 10;
-  constructor(height, width) {
-    this.height = height;
-    this.width = width;
+// class Rectangle {
+//   static x = 10;
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+
+//   getArea() {
+//     return this.height * this.width;
+//   }
+
+//   calcArea() {
+//     return this.height * this.width;
+//   }
+
+//   static test() {
+//     console.log("Hello from static test");
+//   }
+// }
+
+// let obj1 = new Rectangle();
+// // obj1.getArea(); //yes
+// // obj1.calcArea(); //yes
+// // obj1.test();
+// console.log(Rectangle.x);
+
+// class Student {
+//   static count = 10; //static variable initized with 0..ONLY EXECUTED FOR THE FIRST TIME AND NEVER EXECUTES AGAIN
+//   constructor(n, g, s) {
+//     this.name = n;
+//     this.grade = g;
+//     this.school = s;
+//     Student.count++;
+//   }
+
+//   getDetails() {
+//     return `Name: ${this.name}, Grade: ${this.grade}, School:${this.school}`;
+//   }
+// }
+
+// let std1 = new Student("Alan Smith", "A", "Keyin College");
+// let std2 = new Student("Alan Smith", "A", "Keyin College");
+// let std3 = new Student("Alan Smith", "A", "Keyin College");
+// let std4 = new Student("Alan Smith", "A", "Keyin College");
+// let std5 = new Student("Alan Smith", "A", "Keyin College");
+// let std6 = new Student("Alan Smith", "A", "Keyin College");
+
+// console.log(Student.count);
+
+// class Car {
+//   constructor(make, model, year) {
+//     this.make = make;
+//     this.model = model;
+//     this.year = year;
+//   }
+//   getDescription() {
+//     return `${this.year} ${this.model} ${this.make}`;
+//   }
+//   static isVintage(car) {
+//     return car.year < 1990;
+//   }
+// }
+
+// let car1 = new Car("Toyota", "Corolla", 1985);
+// let car2 = new Car("Honda", "Odyssey", 2020);
+
+// console.log(Car.isVintage(car1));
+// console.log(Car.isVintage(car2));
+
+class BankAccount {
+  static accountCount = 0;
+  static depositCount = 0;
+  static withdrawCount = 0;
+  constructor(accountNumber, holderName, balance = 0) {
+    this.accountNumber = accountNumber;
+    this.holderName = holderName;
+    this.balance = balance;
+    BankAccount.accountCount++;
   }
 
-  getArea() {
-    return this.height * this.width;
+  deposit(amount) {
+    this.balance += amount;
+    BankAccount.depositCount++;
+    this.count++;
   }
 
-  calcArea() {
-    return this.height * this.width;
-  }
-
-  static test() {
-    console.log("Hello from static test");
+  withdraw(amount) {
+    if (amount <= this.balance) {
+      this.balance -= amount;
+    } else {
+      console.log("Insufficient funds");
+    }
+    BankAccount.withdrawCount++;
   }
 }
 
-let obj1 = new Rectangle();
-// obj1.getArea(); //yes
-// obj1.calcArea(); //yes
-// obj1.test();
-console.log(Rectangle.x);
+let account1 = new BankAccount("1234", "John Doe", 10000);
+let account2 = new BankAccount("1235", "Kyle Hollett", 25);
+let account3 = new BankAccount("1236", "Bradley", -3000);
+
+account1.deposit(5000);
+account1.withdraw(7000);
+account2.deposit(10000);
+account3.deposit(40000);
+
+console.log(BankAccount.accountCount);
+console.log(BankAccount.depositCount);
+console.log(BankAccount.withdrawCount);
