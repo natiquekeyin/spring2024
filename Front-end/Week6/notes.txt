@@ -58,3 +58,18 @@ x * undefined = NaN
 static methods and fields:
 
 Keyword "static" makes the member function or variable as "class level component" NOT "object level component".
+
+Now I can access the static member by using the class name ... 
+Math.random(); //Math is a class and it has static random() function inside it..
+Math.sqrt();
+
+localStorage: 
+API that enables us to use "browser's memory" to remember few objects during the life of the web page...
+
+localStorage stores data in JSON format...
+    {"title":"java","author","Ivro HOrton","isbn",1223} a json object that we cannot direclty read rather we need convert it into normal object...
+
+    
+    {title:"java",author:"Ivor Horton", isbn:1233} normal object that i can read...
+
+    JSON format is very widely used data type to store/send data over different apis...JSON(Java Script Object Notation)
