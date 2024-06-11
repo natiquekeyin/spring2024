@@ -1,0 +1,16 @@
+AJAX & Asynchronous programming in JavaScript:
+
+AJAX: Asynchronous JavaScript And XML(eXtensible Markup Language)
+
+Asynchronous programming enables us to run a specific code after some other execution in case we need to wait for something...
+
+1. Callbacks functions:
+2. Promises in JavaScript:
+3. Async/Await
+
+
+Make async requests in the background.. so that no page reload /refesh is done...Very interactive...
+
+
+a) XMLHttpRequest(XHR) Object:
+
