@@ -38,3 +38,15 @@ a) XMLHttpRequest(XHR) Object:
 
     GET https://someurl.com/api/users...
     GET https://someurl.com/api/users/1..
+
+b) Fetch API:
+    Promises in JavaScript!
+    Condition to attend tomorrow class!
+    https://www.freecodecamp.org/news/learn-promise-async-await-in-20-minutes/
+    Read and try to understand the concepts there till TASK2... (dont worry about Task3 - lateron...)
+
+    Promises:
+        resolve (fullfilled the promise)
+        reject  (did not fullfill the promise)
+
+        
