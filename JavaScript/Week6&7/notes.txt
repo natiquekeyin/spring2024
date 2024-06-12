@@ -4,7 +4,7 @@ AJAX: Asynchronous JavaScript And XML(eXtensible Markup Language)
 
 Asynchronous programming enables us to run a specific code after some other execution in case we need to wait for something...
 
-1. Callbacks functions:
+1. Callback functions:
 2. Promises in JavaScript:
 3. Async/Await
 
@@ -13,4 +13,28 @@ Make async requests in the background.. so that no page reload /refesh is done..
 
 
 a) XMLHttpRequest(XHR) Object:
+    XHR enables us to access something in background without disturbing the UI, or without reloading/refreshing the page...
+    JSON: JavaScript Object Notation..Most of the APIs use JSON format to send data... its a standard method to transfer data over internet...XML was a mthod that was used before..
+    
+    normalObject = {name:"Alan Smith",email:"alan@gmail.com"}
+    jsonObject = {"name":"Alan Smith","email":"alan@gmail.com"} 
+    
+    WE CANNOT READ THE 
+    PROPERTIES OF JSON OBJECT DIRECTLY, RATHER WE NEED TO CONVERT IT INTO NORMAL OBJECT TO READ IT.
 
+    The APIs that provide data to play with!
+    Most of APIs are of some cost... and others are FREE..
+
+    GET: Retrieve data
+    POST: Post submit data
+    PUT: update data
+    DELETE: delete data..
+
+    users.json... POST ... a new use should be added...
+    PUT..... christina phone to something...
+    DELETE.... 1 ... delete that person
+
+    ENDPOINTS:
+
+    GET https://someurl.com/api/users...
+    GET https://someurl.com/api/users/1..
