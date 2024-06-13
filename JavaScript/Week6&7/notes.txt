@@ -51,5 +51,5 @@ b) Fetch API: Fetch API actually returns promises!
         reject  (did not fullfill the promise)
 
 
-ABOUT SPRINT: Sprint will include everthing before this WEEK..(Async Not included)
+ABOUT SPRINT: Sprint will include everthing before this WEEK..(Async Not included). 
         
