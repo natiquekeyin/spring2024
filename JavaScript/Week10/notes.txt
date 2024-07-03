@@ -1,0 +1,28 @@
+Async/Await Functions : During our react discussions!
+
+
+REACT:
+    A front-end JS library to create intuitive, responsive UIs.
+    HTML, CSS, JavaScript - front-end technologies! (Already discussed)
+
+    React actually works on a concept of "components", the components remain the same and their data keep on changing...
+
+    SPA: Single Page Applications! (index.html is the only page that is loaded from server... rest all data is update inside the components asynchronously)
+
+MEAN/MERN:
+    MongoDB(Persistance storage), ExpressJS(Used to setup the servers), AngularJS (UI Library/framework that can be used to make UIs), NodeJS (runtime environment) (MEAN)
+    MongoDB, ExpressJS, ReactJS(UI Framework), NodeJS (MERN)
+
+REACT is based on HTML,CSS and JavaScript!
+
+WHY REACT: UI becomes difficult to manage with Vanila JavaScript...
+
+First Application:
+
+Node_modules is the BIGGEST folder in our application. So much so, that we exclude it when pushing the contents to the github...
+
+NEVER SEND YOU NODE_MODULES FOLDER WHILE SENDING YOUR PROJECTS TO ME OR SOMEONE...
+
+node_modules consists of all libraries/files needed to run react application..... NEVER SEND...
+
+Francis Question: When  you will send me folder without node_modules, i will run "npm install" command inside your folder and node_moduels will automatcially come in my folder...
