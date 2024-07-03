@@ -54,3 +54,47 @@ JSX ... is a combination of HTML, CSS and JS.
 Every component returns "JSX" that is boiled down to HTML when it goes to index.html
 
 <> </> react fragments.. they are used to wrap around all the JSX and they donot generate their own code...
+
+Create a new component and call it in App component:
+
+Props: (properties)
+ props to the components are LIKE parameters to the functions
+ We pass them while calling the component and receive them in called component....
+
+ function Header(props) {
+  let x = props.name;
+  let y = props.text;
+  return (
+    <div>
+      <h1>{x}</h1>
+      <p>{y}</p>
+    </div>
+  );
+}
+
+export default Header;
+
+
+function Header(props) {
+  let { title, text } = props;
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{text}</p>
+    </div>
+  );
+}
+
+export default Header;
+
+
+function Header({ title, text }) {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{text}</p>
+    </div>
+  );
+}
+
+export default Header;

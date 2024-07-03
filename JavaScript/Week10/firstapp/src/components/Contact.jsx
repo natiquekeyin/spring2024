@@ -1,8 +1,8 @@
 function Contact() {
   return (
     <div>
-      <h1>Contact me</h1>
-      <p>noman.atique@keyin.com</p>
+      <h2 className="demo">Contact me</h2>
+      <p className="demo">noman.atique@keyin.com</p>
     </div>
   );
 }

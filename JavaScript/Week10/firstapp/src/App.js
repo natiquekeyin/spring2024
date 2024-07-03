@@ -1,16 +1,15 @@
 import "./App.css";
 import Contact from "./components/Contact";
+import Header from "./components/Header";
 
 function App() {
   let name = "Alan Smith";
   return (
     <>
-      <div className="App">
-        <h1>My First Application - {name}!</h1>
-        <p>Learning react is fun!</p>
-      </div>
-      <div className="App">
-        <Contact />
+      <div>
+        <Header title="To do app" text="Some text here" />
+        <Header title="School" text="School app here" />
+        <Header title="Attendance App" />
       </div>
     </>
   );
