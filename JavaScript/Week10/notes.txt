@@ -26,3 +26,31 @@ NEVER SEND YOU NODE_MODULES FOLDER WHILE SENDING YOUR PROJECTS TO ME OR SOMEONE.
 node_modules consists of all libraries/files needed to run react application..... NEVER SEND...
 
 Francis Question: When  you will send me folder without node_modules, i will run "npm install" command inside your folder and node_moduels will automatcially come in my folder...
+
+
+July 3,2024:
+
+package.json: "npm install" actually looks package.json and installs or creates the folder node_modules for all required files that are mentioned in package.json..
+
+ALWAYS ALWAYS SEND YOUR PACKAGE.JSON TO ME WHILE SENDING YOUR PROJECT...NEVER SEND NODE_MODULES.
+
+In public folder we have "index.html", this is the Single page that runs when react app runs...
+
+In src folder we have "index.js" that somehow accesses the index.html's div with root id and renders there "<App/>" component.
+
+
+App component is the main component that actually runs when we run our react application...
+
+All components' syntax is like functions ... the difference is that the component actually returns "JSX"
+
+function App(){
+
+    return "JSX"
+}
+
+JSX ... is a combination of HTML, CSS and JS.
+{ } javascript expression box where we can write literally any javascript!
+
+Every component returns "JSX" that is boiled down to HTML when it goes to index.html
+
+<> </> react fragments.. they are used to wrap around all the JSX and they donot generate their own code...
