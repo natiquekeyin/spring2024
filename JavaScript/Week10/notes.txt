@@ -98,3 +98,14 @@ function Header({ title, text }) {
 }
 
 export default Header;
+
+July 4,2024:
+rafce --- 
+
+rfce ---
+
+New project: tasktracker!
+
+components/Header.jsx
+
+ {/* <button className="btn">Add</button> */}
