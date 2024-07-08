@@ -1,6 +1,10 @@
-function Button({ text, color }) {
+function Button({ text, color, onClick }) {
   return (
-    <button style={{ backgroundColor: color }} className="btn">
+    <button
+      style={{ backgroundColor: color }}
+      className="btn"
+      onClick={onClick}
+    >
       {text}
     </button>
   );
