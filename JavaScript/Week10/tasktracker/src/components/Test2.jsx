@@ -18,7 +18,10 @@ const Test2 = () => {
       <button
         onClick={() => {
           setPerson((previousState) => {
-            return { ...previousState, height: 4.5 };
+            return {
+              ...previousState,
+              name: "Bob Smith",
+            };
           });
         }}
       >

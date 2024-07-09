@@ -123,21 +123,44 @@ Types of component:
 
 Hooks:
 1. useState() Hook:
-    useState() is used to maintain the state variables in function components. Their syntax is like following:
+    useState() is used to maintain the state variables in function components. 
+    
+    Their syntax is like following:
 
     useState(0);
     returns two things, ONE the name of a variable, and a function to handle that variable.
 
-    const[num, setNum]=useState(0);
+    const[num, setNum]=useState(0); // it creates a num "state" variable and assigns 0 as intitial value to it...it provides a function setNum that will be used to manipulate the num variable...
+
     const[x,setX] = useState(0);
     const[age,setAge] = useState(20);
 
-    num = 0;
+ 
 
-    num= num+1 CANNOT DO THIS
+    num= num+1 CANNOT DO THIS FOR STATE VARIABLES...
     
     setNum(num+1) -> num = 1..
 
   a state variable changes and updates at all locations automatically, while as normal variabls do not update automatically...
 
-  objec values chaging:
+  object values chaging:
+
+  ... spread operator takes the values and use them..
+
+  (previousState) => return {
+    ..previouState,name:"Bob Smith"
+  }
+
+
+     <button
+        onClick={() => {
+          setNumbers([50, 60, 70]);
+        }}
+      >
+        Change Array
+      </button>
+
+
+
+To maintain state globally we usually define our state variables in App component,
+so unless we use something called "Redux", we need to define most state variables in the App component rather than the given component.Because from here "App" we can transfer them to any other components....

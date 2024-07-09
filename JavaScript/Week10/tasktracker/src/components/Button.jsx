@@ -1,3 +1,4 @@
+import { FaApple } from "react-icons/fa";
 function Button({ text, color, onClick }) {
   return (
     <button
@@ -5,6 +6,7 @@ function Button({ text, color, onClick }) {
       className="btn"
       onClick={onClick}
     >
+      <FaApple style={{ color: "red" }} />
       {text}
     </button>
   );
