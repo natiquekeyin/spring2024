@@ -1,10 +1,13 @@
-import { HiCloudUpload } from "react-icons/hi";
+import { FaTimes } from "react-icons/fa";
 
-const Task = ({ task }) => {
+const Task = ({ task, onDelete, onToggle }) => {
   return (
-    <div className="task">
-      <HiCloudUpload />
-      {task.text}
+    <div className="task " onClick={() => onToggle(task.id)}>
+      <h3>
+        {task.text}{" "}
+        <FaTimes onClick={() => onDelete(task.id)} style={{ color: "red" }} />
+      </h3>
+      <h4>{task.day}</h4>
     </div>
   );
 };
