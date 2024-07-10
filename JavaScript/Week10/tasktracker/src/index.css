@@ -56,3 +56,11 @@ header {
 .task.reminder {
   border-left: 5px solid green;
 }
+
+.form-control {
+  margin: 20px 10px;
+}
+
+.add-form {
+  margin-bottom: 30px;
+}
