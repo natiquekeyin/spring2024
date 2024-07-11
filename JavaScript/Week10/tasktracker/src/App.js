@@ -11,6 +11,8 @@ function App() {
     { id: 3, text: "GYM", day: "August 01,2024 at 11 pm", reminder: true },
   ]);
 
+  const [showAddTask, setShowAddTask] = useState(false);
+
   // to delete a task
 
   const deleteTask = (id) => {
@@ -39,8 +41,13 @@ function App() {
 
   return (
     <div className="container">
-      <Header title="Task Tracker!" />
-      <AddTask onAdd={addTask} />
+      <Header
+        title="Task Tracker!"
+        onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
+      />
+      {showAddTask && <AddTask onAdd={addTask} />}
+      {/* line 48 means if showAddTask is TRUE then ONLY show <AddTask/> otherwise not.... */}
 
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />

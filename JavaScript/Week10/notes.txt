@@ -173,3 +173,7 @@ Events:
 2. Reminder event!
 
 3. Add task form:
+
+4. To show and hide Add task form...
+
+5. To change the text and color of the button:
