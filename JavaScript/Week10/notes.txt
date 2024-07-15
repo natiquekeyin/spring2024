@@ -177,3 +177,15 @@ Events:
 4. To show and hide Add task form...
 
 5. To change the text and color of the button:
+
+July 15,2024:
+
+JSON Server: NPM (Node Package Manager)
+  1.Development server :3000 (one that we are working on)
+  2.Production Server :8000 (one that is published as a product)
+2. To make production server .. we need build of this application
+ a. npm run build (it will create a build folder, that we can server/publish on any server...)
+ b. npm i -g serve
+ c. serve -s build -p 8000
+ d. npm install json-server
+ e.   "server":"json-server --watch db.json --port 5000" in Package.json under scripts
