@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Test1 = () => {
   const [num, setNum] = useState(0);
   const [name, setName] = useState("Alan Smith");
+
+  useEffect(() => {
+    document.title = num;
+  }, [num]);
 
   let x = 10;
 
@@ -15,7 +19,7 @@ const Test1 = () => {
       <button
         onClick={() => {
           setNum(num + 1);
-          setName("Bob Smith");
+          setName("Bob Smith" + num);
           x = x + 10;
         }}
       >

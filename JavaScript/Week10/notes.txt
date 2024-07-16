@@ -189,3 +189,14 @@ JSON Server: NPM (Node Package Manager)
  c. serve -s build -p 8000
  d. npm install json-server
  e.   "server":"json-server --watch db.json --port 5000" in Package.json under scripts
+f. Now copy all the tasks from App.js and paste them in db.json
+
+July 16,2024:
+Hooks: 
+1. useState()... used to maintain state of the component..
+2. useEffect()..is used to apply any "side effects" while component gets rendered...
+   We want some data to be fetched when a component renders...we want to get the updated values when user re-renders..
+   useEffect runs with every render of the component..
+   useEffect(()=>{})... RUN WITH EVERY RENDERING..
+   useEffect(()=>{},[])... JUST RUN ONCE and DONOT RUN AGAIN ON ANY OTHER RENDERING..
+   useEffect(()=>{},[state variable name])... ONLY RUN WHEN STATE VARIABLE CHANGES
