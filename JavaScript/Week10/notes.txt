@@ -205,7 +205,20 @@ Hooks:
 July 17,2024:
 
 API calls to our json server!
-  1. get .. to bring data
+  1. get .. to bring data [QAP3]
   2. Delete... to delete data
   3. post .... to insert new data
   4. put.. to update some given data..
+
+
+
+[FOLLOWING NOT REQUIRED FOR QAP3, BUT YOU MAY USE it]
+
+React Router DOM: used to create routes and links on react application...
+
+  http://localhost:3000    HOME URL...[Home route]
+  http://localhost:3000/about    ABOUT ME page....
+  http://localhost:3000/contact  ... CONTACT US page...
+
+
+

@@ -3,6 +3,12 @@ import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import { useState, useEffect } from "react";
 import AddTask from "./components/AddTask";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import About from "./components/About";
+import Test2 from "./components/Test2";
+
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -82,21 +88,42 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      <Header
-        title="Task Tracker!"
-        onAdd={() => setShowAddTask(!showAddTask)}
-        showAdd={showAddTask}
-      />
-      {showAddTask && <AddTask onAdd={addTask} />}
-      {/* line 48 means if showAddTask is TRUE then ONLY show <AddTask/> otherwise not.... */}
+    <Router>
+      <div className="container">
+        <Link to="/">Home</Link> |<Link to="/contact">Contact</Link> |
+        <Link to="/about">About</Link> | <Link to="/test2">Test2</Link> |{" "}
+        <Link to="/history">History</Link>
+        <Header
+          title="Task Tracker!"
+          onAdd={() => setShowAddTask(!showAddTask)}
+          showAdd={showAddTask}
+        />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                {showAddTask && <AddTask onAdd={addTask} />}
 
-      {tasks.length > 0 ? (
-        <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
-      ) : (
-        "No tasks to show"
-      )}
-    </div>
+                {tasks.length > 0 ? (
+                  <Tasks
+                    tasks={tasks}
+                    onDelete={deleteTask}
+                    onToggle={toggleReminder}
+                  />
+                ) : (
+                  "No tasks to show"
+                )}
+              </>
+            }
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/test2" element={<Test2 />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

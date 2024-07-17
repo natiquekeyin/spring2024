@@ -4,6 +4,12 @@
       "id": "1",
       "text": "Appointment",
       "day": "July 20,2024 at 1pm",
+      "reminder": false
+    },
+    {
+      "id": "6811",
+      "text": "GYM",
+      "day": "August 1,2024",
       "reminder": true
     }
   ]
