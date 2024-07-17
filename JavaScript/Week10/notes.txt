@@ -200,3 +200,12 @@ Hooks:
    useEffect(()=>{})... RUN WITH EVERY RENDERING..
    useEffect(()=>{},[])... JUST RUN ONCE and DONOT RUN AGAIN ON ANY OTHER RENDERING..
    useEffect(()=>{},[state variable name])... ONLY RUN WHEN STATE VARIABLE CHANGES
+
+
+July 17,2024:
+
+API calls to our json server!
+  1. get .. to bring data
+  2. Delete... to delete data
+  3. post .... to insert new data
+  4. put.. to update some given data..
