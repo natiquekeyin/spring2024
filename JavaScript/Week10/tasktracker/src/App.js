@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Test2 from "./components/Test2";
+import TaskDetails from "./components/TaskDetails";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -120,6 +121,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/test2" element={<Test2 />} />
+          <Route path="/task/:id" element={<TaskDetails />} />
         </Routes>
         <Footer />
       </div>
