@@ -3,3 +3,11 @@ Testing React Components:
 
 Testing:
 
+
+className... class
+htmlFor ... for
+
+[input type=text
+textarea].... BOTH HAVE SAME ROLE ... THAT IS textbox...
+
+29 slide onward on July 25....

@@ -8,7 +8,7 @@ describe("PERIOD", () => {
     expect(txtElement).toBeInTheDocument();
   });
 
-  test.only("Add period with name and period", () => {
+  test("Add period with name and period", () => {
     render(<AddPeriod name="Alex" />);
     const txtElement = screen.getByText("Hello Alex.");
     expect(txtElement).toBeInTheDocument();
