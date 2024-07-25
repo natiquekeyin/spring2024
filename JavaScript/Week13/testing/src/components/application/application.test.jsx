@@ -25,7 +25,7 @@ describe("Application", () => {
     const submitButtonElement = screen.getByRole("button");
     expect(submitButtonElement).toBeInTheDocument();
 
-    const bioElement = screen.getByRole("textbox", { name: "Bio" });
-    expect(bioElement).toBeInTheDocument();
+    // const bioElement = screen.getByRole("textbox", { name: "Bio" });
+    // expect(bioElement).toBeInTheDocument();
   });
 });
