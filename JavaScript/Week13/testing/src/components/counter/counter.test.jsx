@@ -38,4 +38,62 @@ describe("Counter", () => {
     const countElement = screen.getByRole("heading");
     expect(countElement).toHaveTextContent("10");
   });
+
+  test("elements are focussed in the right order", async () => {
+    user.setup();
+    render(<Counter />);
+    const amountInput = screen.getByRole("spinbutton");
+    const setButton = screen.getByRole("button", { name: "Set" });
+    const incrementButton = screen.getByRole("button", { name: "Increment" });
+
+    await user.tab();
+    expect(incrementButton).toHaveFocus();
+    await user.tab();
+    expect(amountInput).toHaveFocus();
+    await user.tab();
+    expect(setButton).toHaveFocus();
+  });
+
+  // Generic Keyborad utitlities..
+  // clear();
+
+  test("clear", async () => {
+    render(<textarea defaultValue="Hello World" />);
+    await user.clear(screen.getByRole("textbox"));
+    expect(screen.getByRole("textbox")).toHaveValue("");
+  });
+
+  // selectOptions()
+
+  test("Selection Options", async () => {
+    render(
+      <select multiple>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+      </select>
+    );
+    await user.selectOptions(screen.getByRole("listbox"), ["1", "C"]);
+    expect(screen.getByRole("option", { name: "A" }).selected).toBe(true);
+    expect(screen.getByRole("option", { name: "B" }).selected).toBe(false);
+    expect(screen.getByRole("option", { name: "C" }).selected).toBe(true);
+  });
+
+  // uploading files....
+
+  test.only("upload file", async () => {
+    render(
+      <div>
+        <label htmlFor="file-uploader">Upload File:</label>
+        <input type="file" id="file-uploader" />
+      </div>
+    );
+
+    const file = new File(["hello"], "hello.png", { type: "image/png" });
+    const input = screen.getByLabelText(/upload file/i);
+    await user.upload(input, file);
+    expect(input.files[0]).toBe(file);
+    expect(input.files.item(0)).toBe(file);
+    expect(input.files).toHaveLength(1);
+  });
 });
